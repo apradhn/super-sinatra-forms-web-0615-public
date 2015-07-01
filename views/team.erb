@@ -1,3 +1,12 @@
-
+<div class="col-md-8">
+  <h2><%= @team[:name] %></h2>
+  <h3>Motto: <%= @team[:motto] %></h3>
+  <% @heroes.each do |hero| %>
+    <h4>Hero Name: <%= hero[:name] %></h4>
+    <br>
+    <p>Hero Power: <%= hero[:power] %></p>
+    <p>Hero Biography: <%= hero[:bio] %></p>
+  <% end %>
+</div>
 
 

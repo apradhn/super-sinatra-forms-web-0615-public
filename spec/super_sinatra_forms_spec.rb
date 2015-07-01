@@ -43,6 +43,7 @@ describe App do
     end
 
     it 'sends a 200 status code' do 
+      # binding.pry
       expect(last_response.status).to eq(200)
     end
 
